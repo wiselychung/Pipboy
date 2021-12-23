@@ -13,9 +13,9 @@
     </head>
     <body>
         <nav class = "nav navbar navbar-light">
-            <div class="nav navbar-collapse">
-                <ul class="nav mr-auto">
-                    <li class= "nav-item active">
+            <div class= "navbar-collapse">
+                <ul class="nav nav-fill">
+                    <li class= "navbar-item active">
                       <a class="nav-link" href="#">STAT</a>
                     </li>
                     <li class="nav-item">
@@ -33,13 +33,44 @@
                   </ul>
             </div>
         </nav>
-        
-        <nav>
 
+        <ul class = "nav nav-tabs">
+          <li class = "nav-item">
+            <a href="#status" class = "nav-link" data-toggle="tab" role = "tab">STATUS</a>
+          </li>
+          <li class = "nav-item">
+            <a href="#special" class = "nav-link" data-toggle = "tab">SPECIAL</a>
+          </li>
+          <li class = "nav-item">
+            <a href="#perks" class = "nav-link" data-toggle = "tab">PERKS</a>
+          </li>
+        </ul>
 
-          
-        </nav>
-        <p>pokemon pokemon</p>
+        <div class = "tab-content">
+          <div class = "tab-pane active" id = "status" role = "tabpanel">
+            <div class = "center-image">
+              <img src="snoo.png" />
+            </div>
+          </div>
+          <div class = "tab-pane" id = "special" role = "tabpanel">SPECIAL</div>
+          <div class = "tab-pane " id = "perks" role = "tabpanel">PERKS</div>
+        </div>
+              
+        <navbar class = "navbar navbar-light pip-footer">
+          <div class = "row">
+            <div class = "col-3">
+              HP 90/90
+            </div>
+            <div class = "col-6">
+              LEVEL 1
+              <div class = "level-progress"></div>
+            </div>
+            <div class = "col-3">
+              AP 50/50
+            </div>
+          </div>
+        </navbar>
+
         <script src = "js/jquery-3.6.0.min.js"></script>
         <script src = "js/tether.js"></script>
         <script src = "js/bootstrap.min.js"></script>
