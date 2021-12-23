@@ -10,6 +10,19 @@ body{
     background: #272b23;
 }
 
+body::after{
+    height:100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.4) 1px, transparent 1px, transparent 2px);
+    opacity: 0.3;
+    z-index: 1000000;
+    pointer-events: none;
+}
+
 .navbar{
     border-bottom: 2px solid;
     margin: 0px 10px;
@@ -38,15 +51,23 @@ ul > li > a {
     color: #14fe17;
 }
 
-.navbar-light .nav > li.navbar-item.active > a.nav-link{
+.navbar-light .nav > li.navbar-item.active > .nav-link{
     color: #14fe17 !important;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
 }
 
-.navbar-light ul.nav > li.nav-item > .nav-link,
-.navbar-light ul.nav > li.navbar-item.active > a.nav-link{ 
+
+
+.navbar-light .nav > li.nav-item > .nav-link,
+.navbar-light .nav > li.navbar-item .active> .nav-link{ 
     text-align: center;
-    width: 50%;
+    width: 100%;
     margin: auto;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
 }
 
 .nav{
@@ -70,7 +91,7 @@ ul > li > a {
 
 .pip-footer{
     position: fixed;
-    bottom: 0;
-    width: calc (100%-20px);
+    bottom: 0px;
+    width: calc (100%-1px);
     margin: 10px;
 }
