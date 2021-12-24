@@ -14,7 +14,7 @@
     <body>
         <nav class = "navbar navbar-toggleable navbar-light">
             <div class= "collapse navbar-collapse" id = "mainNav">
-                <ul class="navbar-nav nav-fill">
+                <ul class="navbar-nav">
                     <li class= "navbar-item active">
                       <a class="nav-link" href="#">STAT</a>
                     </li>
@@ -33,29 +33,36 @@
                   </ul>
             </div>
         </nav>
+        <div class = "container">
+          <div class = "row">
+            <div class = "col-12">
+              <ul class = "nav nav-tabs">
+                <li class = "nav-item">
+                  <a href="#status" class = "nav-link" data-toggle="tab" role = "tab">STATUS</a>
+                </li>
+                <li class = "nav-item">
+                  <a href="#special" class = "nav-link" data-toggle = "tab">SPECIAL</a>
+                </li>
+                <li class = "nav-item">
+                  <a href="#perks" class = "nav-link" data-toggle = "tab">PERKS</a>
+                </li>
+              </ul>
 
-        <ul class = "nav nav-tabs">
-          <li class = "nav-item">
-            <a href="#status" class = "nav-link" data-toggle="tab" role = "tab">STATUS</a>
-          </li>
-          <li class = "nav-item">
-            <a href="#special" class = "nav-link" data-toggle = "tab">SPECIAL</a>
-          </li>
-          <li class = "nav-item">
-            <a href="#perks" class = "nav-link" data-toggle = "tab">PERKS</a>
-          </li>
-        </ul>
-
-        <div class = "tab-content">
-          <div class = "tab-pane active" id = "status" role = "tabpanel">
-            <div class = "center-image">
-              <img src="snoo.png" />
+              <div class = "tab-content">
+                <div class = "tab-pane active" id = "status" role = "tabpanel">
+                  <div class = "center-image">
+                    <img src="snoo.png" />
+                  </div>
+                </div>
+                <div class = "tab-pane" id = "special" role = "tabpanel">SPECIAL</div>
+                <div class = "tab-pane " id = "perks" role = "tabpanel">PERKS</div>
+              </div>
             </div>
           </div>
-          <div class = "tab-pane" id = "special" role = "tabpanel">SPECIAL</div>
-          <div class = "tab-pane " id = "perks" role = "tabpanel">PERKS</div>
-        </div>
-              
+        </div>      
+
+
+
         <navbar class = "navbar navbar-light pip-footer">
           <div class = "row">
             <div class = "col-3">
